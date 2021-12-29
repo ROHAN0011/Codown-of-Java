@@ -1,4 +1,4 @@
-// BASIC PROGRAMS //
+// ****************************** BASIC PROGRAMS ********************************** //
 
 //1. Fibonacci Series
 
@@ -17,6 +17,8 @@ class FibonacciExample1 {
 
     }
 }
+
+
 
 // 2. Prime Number Program
 
@@ -42,6 +44,8 @@ public class PrimeExample {
     }
 }
 
+
+
 // 3. Palindrome Program
 
 class PalindromeExample {
@@ -62,6 +66,8 @@ class PalindromeExample {
     }
 }
 
+
+
 // 4. Factorial Program
 
 class FactorialExample {
@@ -74,6 +80,8 @@ class FactorialExample {
         System.out.println("Factorial of " + number + " is: " + fact);
     }
 }
+
+
 
 // 5. Armstrong Number
 
@@ -125,6 +133,8 @@ public class ArmstsrongNumberExample {
                 System.out.print(i + ", ");
     }
 }
+
+
 
 // 6. How to Generate Random Number
 
