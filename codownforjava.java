@@ -18,8 +18,6 @@ class FibonacciExample1 {
     }
 }
 
-
-
 // 2. Prime Number Program
 
 public class PrimeExample {
@@ -44,8 +42,6 @@ public class PrimeExample {
     }
 }
 
-
-
 // 3. Palindrome Program
 
 class PalindromeExample {
@@ -66,8 +62,6 @@ class PalindromeExample {
     }
 }
 
-
-
 // 4. Factorial Program
 
 class FactorialExample {
@@ -80,8 +74,6 @@ class FactorialExample {
         System.out.println("Factorial of " + number + " is: " + fact);
     }
 }
-
-
 
 // 5. Armstrong Number
 
@@ -134,9 +126,7 @@ public class ArmstsrongNumberExample {
     }
 }
 
-
-
-// 6. How to Generate Random Number
+// 6. Generate Random Number
 
 import java.lang.Math;
 
@@ -165,6 +155,78 @@ public class RandomNumberExample2 {
     }
 }
 
+// 7. Compare Two Objects
+
+public class HashcodeExample {
+    public static void main(String[] args) {
+        // creating two instances of the Employee class
+        Employee emp1 = new Employee(918, "Maria");
+        Employee emp2 = new Employee(918, "Maria");
+        // invoking hashCode() method
+        int a = emp1.hashCode();
+        int b = emp2.hashCode();
+        System.out.println("hashcode of emp1 = " + a);
+        System.out.println("hashcode of emp2 = " + b);
+        System.out.println("Comparing objects emp1 and emp2 = " + emp1.equals(emp2));
+    }
+
+}
+
+    // overriding equals() method
+
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (obj == this)
+            return true;
+        return this.getRegno() == ((Employee) obj).getRegno();
+    }
+
+    // 8. Creating Object
+
+    /*
+     * Using new Keyword
+     * Using clone() method
+     * Using newInstance() method of the Class class
+     * Using newInstance() method of the Constructor class
+     * Using Deserialization
+     */
+
+    // 9. Print ASCII Value
+
+    // Assigning a Variable to the int Variable
+
+    public class PrintAsciiValueExample1 {
+        public static void main(String[] args) {
+            // character whose ASCII value to be found
+            char ch1 = 'a';
+            char ch2 = 'b';
+            // variable that stores the integer value of the character
+            int asciivalue1 = ch1;
+            int asciivalue2 = ch2;
+            System.out.println("The ASCII value of " + ch1 + " is: " + asciivalue1);
+            System.out.println("The ASCII value of " + ch2 + " is: " + asciivalue2);
+        }
+    }
+
+    // Using Type-Casting
+
+public class PrintAsciiValueExample2  
+{  
+public static void main(String[] args)   
+{  
+//characters whose ASCII value to be found  
+char ch1 = 'a';  
+char ch2 = 'b';  
+//casting or converting a charter into int type  
+int ascii1 = (int) ch1;  
+int ascii2 = (int) ch2;  
+System.out.println("The ASCII value of " + ch1 + " is: " + ascii1);  
+System.out.println("The ASCII value of " + ch1 + " is: " + ascii2);  
+}  
+}
 
 
-//7. How to Print Pattern
+
+// ****************************** NUMBER PROGRAMS ********************************** //
+
